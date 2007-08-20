@@ -75,7 +75,7 @@ rm -rf $RPM_BUILD_ROOT
 %_bindir/%name
 %_datadir/applications/%name.desktop
 %_datadir/%name
-%_datadir/man/man1/*
+%_mandir/man1/*
 %_datadir/omf/%name/%name-C.omf
 %_sysconfdir/gconf/schemas/%name.schemas
 %_menudir/%name
