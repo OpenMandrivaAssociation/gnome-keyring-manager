@@ -6,7 +6,6 @@ Source0: http://ftp.gnome.org/pub/GNOME/sources/%name/%{name}-%{version}.tar.bz2
 License: GPL
 Group: Graphical desktop/GNOME
 Url: http://gnomesupport.org/wiki/index.php/GNOME%20Keyring%20Manager%20Wiki
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: intltool
 BuildRequires: libgnomeui2-devel
 BuildRequires: libglade2.0-devel
