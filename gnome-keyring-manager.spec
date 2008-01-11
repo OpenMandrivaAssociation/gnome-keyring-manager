@@ -32,17 +32,6 @@ hacker-trainers.
 %install
 rm -rf $RPM_BUILD_ROOT
 GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1 %makeinstall_std _ENABLE_SK=no
-install -d -m 755 $RPM_BUILD_ROOT%{_menudir}
-cat >$RPM_BUILD_ROOT%{_menudir}/%{name} <<EOF
-?package(%{name}): \
-	command="%{_bindir}/%{name}" \
-	needs="gnome" \
-	section="System/Configuration/GNOME" \
-	title="GNOME keyring manager" \
-	longtitle="Manage your secrets with the GNOME keyring" \
-	icon="stock_keyring" \
-	startup_notify="true" xdg="true"
-EOF
 desktop-file-install --vendor="" \
   --remove-category="Application" \
   --add-category="X-MandrivaLinux-System-Configuration-GNOME" \
@@ -78,6 +67,5 @@ rm -rf $RPM_BUILD_ROOT
 %_mandir/man1/*
 %_datadir/omf/%name/%name-C.omf
 %_sysconfdir/gconf/schemas/%name.schemas
-%_menudir/%name
 
 
