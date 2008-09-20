@@ -1,9 +1,9 @@
 Summary: GNOME keyring manager
 Name: gnome-keyring-manager
 Version: 2.20.0
-Release: %mkrel 3
+Release: %mkrel 2
 Source0: http://ftp.gnome.org/pub/GNOME/sources/%name/%{name}-%{version}.tar.bz2
-License: GPL
+License: GPLv2+
 Group: Graphical desktop/GNOME
 Url: http://gnomesupport.org/wiki/index.php/GNOME%20Keyring%20Manager%20Wiki
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
