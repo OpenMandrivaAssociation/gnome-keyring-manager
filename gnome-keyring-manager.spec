@@ -3,6 +3,7 @@ Name: gnome-keyring-manager
 Version: 2.20.0
 Release: %mkrel 3
 Source0: http://ftp.gnome.org/pub/GNOME/sources/%name/%{name}-%{version}.tar.bz2
+Patch:  gnome-keyring-manager-2.20.0-format-strings.patch
 License: GPLv2+
 Group: Graphical desktop/GNOME
 Url: http://gnomesupport.org/wiki/index.php/GNOME%20Keyring%20Manager%20Wiki
@@ -12,6 +13,7 @@ BuildRequires: libgnomeui2-devel
 BuildRequires: libglade2.0-devel
 BuildRequires: gnome-keyring-devel >= 0.3.2
 BuildRequires: gnome-doc-utils
+BuildRequires: docbook-dtd42-xml
 BuildRequires: libxslt-proc
 BuildRequires: scrollkeeper
 BuildRequires: desktop-file-utils
@@ -24,6 +26,7 @@ hacker-trainers.
 
 %prep
 %setup -q
+%patch -p1
 
 %build
 %configure2_5x
