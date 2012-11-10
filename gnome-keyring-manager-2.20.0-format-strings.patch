@@ -1,0 +1,12 @@
+diff -p -up gnome-keyring-manager-2.20.0/src/gnome-keyring-manager-main-ui.c~ gnome-keyring-manager-2.20.0/src/gnome-keyring-manager-main-ui.c
+--- gnome-keyring-manager-2.20.0/src/gnome-keyring-manager-main-ui.c~	2007-08-11 12:06:34.000000000 +0200
++++ gnome-keyring-manager-2.20.0/src/gnome-keyring-manager-main-ui.c	2009-09-21 17:39:56.000000000 +0200
+@@ -664,7 +664,7 @@ delete_action_common (GKMMainUI         
+ 				       name);
+       
+       gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog),
+-						secondary_text);
++						"%s", secondary_text);
+       
+       gtk_dialog_add_buttons (GTK_DIALOG (dialog),
+ 			      GTK_STOCK_DELETE,
