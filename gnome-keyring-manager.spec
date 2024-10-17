@@ -6,7 +6,7 @@ Source0: http://ftp.gnome.org/pub/GNOME/sources/%name/%{name}-%{version}.tar.bz2
 Patch:  gnome-keyring-manager-2.20.0-format-strings.patch
 License: GPLv2+
 Group: Graphical desktop/GNOME
-Url: http://gnomesupport.org/wiki/index.php/GNOME%20Keyring%20Manager%20Wiki
+Url: https://gnomesupport.org/wiki/index.php/GNOME%20Keyring%20Manager%20Wiki
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: intltool
 BuildRequires: libgnomeui2-devel
