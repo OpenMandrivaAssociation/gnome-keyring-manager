@@ -8,6 +8,11 @@ License: GPLv2+
 Group: Graphical desktop/GNOME
 Url: https://gnomesupport.org/wiki/index.php/GNOME%20Keyring%20Manager%20Wiki
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: intltool
 BuildRequires: libgnomeui2-devel
 BuildRequires: libglade2.0-devel
